@@ -1,0 +1,283 @@
+@font-face {
+	font-family: mononoki;
+	src:url("mononoki-Regular.woff")
+}
+
+@font-face {
+	font-family: linja nanpa;
+	src:url("nasin-nanpa-2.5.1.otf")
+}
+
+
+body {
+	background-color: #031014;
+	color: #ee8def;
+	font-family: mononoki, linja nanpa;
+	font-size:115%;
+	 	background-image:url("background-clouds.png"), url(background-grass.png), url("background-repeat.jpg");
+		background-repeat: no-repeat, no-repeat, repeat;
+		background-position: center top, center bottom, center;
+	}
+
+@media all and (min-width: 900px) {
+.box {
+ border: 3px solid #e63e62;
+ background-color: rgba(3,16,20,0.8);
+ margin-left: 100px;
+ margin-bottom: 25px;
+ padding:10px;
+}
+.box-title {
+	margin-bottom: 0px;
+	margin-left: 80px;
+}
+.list {	
+ border: 3px solid #e63e62;
+ background-color: rgba(3,16,20,0.8);
+ margin-bottom: 25px;
+ margin-left: 100px;
+ padding:10px;
+ width: max-content;
+}
+}
+
+@media all and (min-width: 1000px) {
+.box {
+ border: 3px solid #e63e62;
+ background-color: rgba(3,16,20,0.8);
+ margin-left: 100px;
+ margin-bottom: 25px;
+ width: 40%;
+ padding:10px;
+}
+.box-title {
+	margin-left: 80px;
+}
+.list {	
+ border: 3px solid #e63e62;
+ background-color: rgba(3,16,20,0.8);
+ margin-bottom: 25px;
+ padding:10px;
+ width: max-content;
+}
+}
+@media all and (max-width: 900px) {
+.box {
+ border: 3px solid #e63e62;
+ background-color: rgba(3,16,20,0.8);
+ margin-bottom: 25px;
+ padding:10px;
+}
+.list {	
+ border: 3px solid #e63e62;
+ background-color: rgba(3,16,20,0.8);
+ padding:10px;
+}
+}
+
+@media all and (min-width: 1921px) {
+	body {
+		background-image: none !important;
+	}
+}
+
+@media all and (min-height: 1081px) {
+	body {
+		background-image: none !important;
+	}
+}
+
+.special-background {
+	background-image: url("background-index.jpg");
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: "~ ";
+}
+
+li {
+	padding:5px;
+}
+
+.list-padding > li {
+	padding:10px;
+}
+
+hr {
+	height: 1px;
+	color: transparent;
+	background-color: transparent;
+	border: 0;
+}
+
+
+.title {
+	text-shadow: -2px 2px 2px #031014,
+				  2px 2px 2px #031014,
+				  2px -2px 2px #031014,
+				  -2px -2px 2px #031014;
+	color: #e63e62;
+}
+
+h1.title {
+	font-size: 190%;
+}
+
+h2.title {
+	font-size:190%;
+}
+
+h3.title {
+	font-size:130%
+}
+
+.indent {
+	margin: 0px 0px 0px 20px;
+}
+
+.bigindent {
+	margin: 0px 0px 0px 50px;
+}
+
+.link {
+	border-bottom: 2px solid #bfef8d;
+	color: #bfef8d;
+}
+
+.zelda {
+	border-bottom: 2px solid #e63e62;
+	color: #e63e62;
+}
+
+a.zelda:hover, .title > a:hover, .button:hover, .answers > span:hover {
+	background-color: #e63e62;
+	color: #031014;
+	cursor:pointer;
+	text-shadow: none;
+}
+
+.bordered {
+	color: #bfef8d;
+	border-bottom: 3px solid #bfef8d;
+}
+
+.header {
+	color: #bfef8d;
+	border-bottom: 5px solid #bfef8d;
+}
+
+.title-emphasis {
+	color:#e63e62;
+	border-bottom: 4px solid #e63e62;
+	font-size: 150%;
+}
+
+.date {
+	color: #e63e62;
+	border-bottom: 2px solid #e63e62;
+	margin-bottom:0em;
+	margin-top:0em;
+}
+
+.hide {
+	display: none;
+}
+
+a:hover, title > .link:hover {
+	color: #031014;
+	background-color: #bfef8d;
+}
+
+.tagline {
+	color: #e63e62;
+	margin-top:0em;
+	margin-bottom:0em;
+}
+
+.blorbotitle {
+	margin-bottom:0em;
+}
+
+.tp-size {
+	font-size:125%;
+}
+
+.clickable {
+	cursor:pointer;
+}
+
+
+.box-image {
+	border: 3px solid #e63e62;
+ background-color: rgba(3,16,20,0.8);
+	margin:5px
+}
+
+.gay-grid {
+	display: inline-grid;
+	gap: 5px;
+	grid-template-columns: 40%;
+}
+
+.gay-box {
+	border: 3px solid #e63e62;
+	background-color: #031014;
+}
+
+#perfect {
+	grid-row-start:1;
+}
+
+#good {
+	grid-row-start:1;
+}
+
+.cat-boxes > .box {
+ margin-bottom: 50px;
+}
+
+.cat-boxes > img {
+	margin-bottom: 1px !important;
+}
+
+.sentence {
+	font-style: italic;
+}
+
+.subject {
+	border-bottom: solid 3px #e63e62;
+	color:#e63e62;
+}
+
+.predicate {
+	border-bottom: dashed 3px #bfef8d;
+	color:#bfef8d;
+}
+
+.object {
+	border-bottom: dotted 3px #6c56f1;
+	color:#6c56f1;
+}
+
+.preverb {
+	border-bottom: dotted 3px #f16c56;
+	color: #f16c56;
+}
+
+.list-entry {
+	font-size:125%;
+}
+
+.box-top {
+	margin-bottom:5px;
+}
+
+.sub-title {
+	margin-top:0px;
+}
